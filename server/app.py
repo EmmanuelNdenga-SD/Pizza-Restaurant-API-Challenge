@@ -12,7 +12,7 @@ def create_app():
     db.init_app(app)
     migrate.init_app(app, db)
     
-    # Register blueprints
+    
     from server.controllers.restaurant_controller import restaurant_controller
     from server.controllers.pizza_controller import pizza_controller
     from server.controllers.restaurant_pizza_controller import restaurant_pizza_controller
