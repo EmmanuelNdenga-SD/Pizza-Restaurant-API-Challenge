@@ -4,7 +4,7 @@ from ..app import db
 
 pizza_controller = Blueprint('pizzas', __name__)
 
-@pizza_controller.route('/pizzas', methods=['GET'])
+@pizza_controller.route('/pizzas', methods=['GET']) #method to get all pizzas or get by id 
 def get_pizzas():
     pizzas = Pizza.query.all()
     return jsonify([{

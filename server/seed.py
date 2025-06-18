@@ -9,15 +9,15 @@ def seed_database():
         
         print("Creating restaurants...")
         restaurants = [
-            Restaurant(name="Pizza Palace", address="123 Main St"),
-            Restaurant(name="Mario's Pizzeria", address="456 Oak Ave"),
-            Restaurant(name="Luigi's Pizza", address="789 Pine Rd")
+            Restaurant(name="Pizza Inn", address="123 Luthuli Street"),
+            Restaurant(name="Swahili Dishes", address="456 Mombasa Ave"),
+            Restaurant(name="Big Square ", address="Mombasa Road")
         ]
         
         print("Creating pizzas...")
         pizzas = [
-            Pizza(name="Margherita", ingredients="Tomato sauce, Mozzarella, Basil"),
-            Pizza(name="Pepperoni", ingredients="Tomato sauce, Mozzarella, Pepperoni"),
+            Pizza(name="Margherita chicken", ingredients="Tomato sauce, Mozzarella, Basil"),
+            Pizza(name="Pepperoni beef", ingredients="Tomato sauce, Mozzarella, Pepperoni"),
             Pizza(name="Vegetarian", ingredients="Tomato sauce, Mozzarella, Bell peppers, Mushrooms, Olives")
         ]
         
@@ -26,10 +26,10 @@ def seed_database():
         
         print("Creating restaurant pizzas...")
         restaurant_pizzas = [
-            RestaurantPizza(price=10, restaurant_id=1, pizza_id=1),
-            RestaurantPizza(price=12, restaurant_id=1, pizza_id=2),
-            RestaurantPizza(price=15, restaurant_id=2, pizza_id=3),
-            RestaurantPizza(price=8, restaurant_id=3, pizza_id=1)
+            RestaurantPizza(price=1000, restaurant_id=1, pizza_id=1),
+            RestaurantPizza(price=1200, restaurant_id=1, pizza_id=2),
+            RestaurantPizza(price=1500, restaurant_id=2, pizza_id=3),
+            RestaurantPizza(price=800, restaurant_id=3, pizza_id=1)
         ]
         
         db.session.add_all(restaurant_pizzas)
