@@ -63,3 +63,6 @@ Click "GET All Restaurants"
 Click Send (blue button)
 
 Check response (status should be 200 with restaurant data)
+
+# Database 
+ SQLITE
